@@ -1,0 +1,152 @@
+:root {
+    --color :rgb(33, 25, 80);
+     --green: rgb(0, 184, 55);
+    --yallow:#ffc400;
+    --red:rgba(255, 0, 0, 0.76);
+    --section: rgb(226, 226, 226);
+}
+body {
+    height: 10000px;
+}
+.navbar {
+    background-color: var(--color);
+}
+.main-btn {
+    background-color: var(--red);
+    color: var(--yallow);
+    padding: 0.5rem 1rem 
+    ;
+}
+.navbar .navbar-nav .nav-link {
+    color: white;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--green);
+}
+.navbar .search {
+    border-left: 1px solid var(--green);
+}
+.navbar .search svg {
+    color: var(--green);
+}
+.navbar .navbar-toggler {
+
+    color: white;
+    font-size: 20px;
+    border-color: white;
+}
+.navbar .navbar-toggler span {
+    color: white;
+}
+.landing {
+    background-color: var(--color);
+    min-height: calc(100vh - 72px);
+}
+.main-title::after {
+    content: "";
+    width: 8rem;
+    height: 3px;
+    background-color: var(--green);
+    position: absolute;
+    /* left: 25rem; */
+    left: 50%;
+    transform: translate(-50%);
+}
+.features .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features .icon-holder {
+    height: 200px;
+}
+.features .icon-holder .number {
+    font-size: 12rem;
+    color: var(--section) ;
+}
+.features .icon-holder .icon {
+color: var(--green);
+font-size: 3rem;
+}
+.our-book {
+    background-color: var(--section);
+}
+.our-book ul li.active {
+    background-color: var(--red);
+    color: var(--yallows);
+}
+.our-book ul li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    display: block;
+
+}
+.our-book ul li:not(.active):hover {
+color: var(--red);
+}
+.our-book .box  {
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+
+}
+.our-book .box::before {
+    content: attr(data-work);
+    position: absolute;
+    background-color: rgba(15, 177, 241, 0.562);
+    width: calc(100% - 10px);
+    height:calc(100% - 10px) ;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+    font-size: 1.5rem;
+    transform: translateX(calc(-100% - 5px));
+
+}
+.our-book .box:hover:before {
+    transform: translateX(0);
+}
+
+.stuff .desc {
+    max-width: 500px;
+}
+
+.img-fluid {
+    width:50%;
+
+
+}
+.team {
+    background-color: var(--section);
+}
+.team h3 {
+    color: var(--yallow);
+}
+.team .box h2 {
+    background-color:rgba(15, 177, 241, 0.562);;
+}
+.project {
+    background-color: var(--color)
+}
+.subs {
+    background-color: var(--yallow);
+}
+
+.subs input[type="text"] {
+     border: none;
+     border-bottom: 1px solid white;
+}
+.subs ::placeholder {
+    color: white;
+}
+.subs input[type="submit"] {
+color: var(--yallow);
+background-color: var(--color);
+}
+.footer {
+    background-color: var(--color);
+}
